@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset=" FITNEY">
+	<meta http-equiv="X-UA-COMPATIBLE" content="IE-EDGE">
+	<meta name="viewport" content="width=device-width, initial-social=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+	<title>Fitness Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class ="logo">Fitney<span>P</span></div>
+			<div class="open"><i class="fa fa-bars"></i></div>
+			<ul class="links">
+				<li><a href="#" class="active">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Trainers</a></li>
+				<li><a href="#">Plan</a></li>
+				<li><a href="#">Register</a></li>
+				<div class="close"><i class="fa fa-times"></i></div>
+			</ul>
+		</nav>
+		<div class="content">
+			<h1>Fitness</h1>
+			<button class="btn">Get Started</button>
+		</div>
+	</header>
+
+
+
+
+	<section class="about">
+		<div class="row">
+			<img src="./images/aboutus.jpg">
+		</div>
+		<div class="pointer">
+			<h1>About Us</h1>
+			<p>Fitness is the condition of being physically fit and healthy and involves attributes that include, but are not limited to mental acuity, cardiorespiratory endurance, muscular strength, muscular endurance, body composition, and flexibility.</p>
+			<button class="btn">Learn More</button>
+		</div>
+	</section>
+
+
+
+	<section class="services">
+		<h1>Our Services</h1>
+		<div class="container">
+			<div class="box">
+				<img src="./images/treadmill.jpg">
+				<div class="info">
+					<h3>Treadmill</h3>		
+					<p>A treadmill is a device generally used for walking, running, or climbing while staying in the same place. Treadmills were introduced before the development of powered machines to harness the power of animals or humans to do work, often a type of mill operated by a person or animal treading the steps of a treadwheel to grind grain. In later times, treadmills were used as punishment devices for people sentenced to hard labor in prisons. The terms treadmill and treadwheel were used interchangeably for the power and punishment mechanisms.</p>			
+					<button class="btn">More</button>
+				</div>
+			</div>
+			<div class="box">
+				<img src="./images/yoga.jpg">
+				<div class="info">
+					<h3>Yoga</h3>		
+					<p>It’s hard to find a wellness trend that has enjoyed more sustained buzz than yoga.
+
+					The number of people practicing yoga in the United States grew more than 50 percent from 2012 to 2016, according to data. The survey found that people who practice yoga are more likely to be active in other forms of exercise like running or cycling, too, and that one in every three Americans said they were somewhat or very likely to practice yoga in the next 12 months.right up arrow
+					No single reason is driving people to the millennia-old practice. Experts suspect it has something to do with yoga's combination of physical and mental health benefits.</p>			
+					<button class="btn">More</button>
+				</div>
+			</div>
+			<div class="box">
+				<img src="./images/trainer.jpg">
+				<div class="info">
+					<h3>Trainer</h3>		
+					<p>From language teachers to fitness instructors, trainers are sought after by individuals embarking on a journey to gain new skills or attain more knowledge. These trainers (also called a coach, teacher or instructor) are professionals in their fields, with experience and a knack for teaching others.</p>			
+					<button class="btn">More</button>
+				</div>
+			</div>
+			<div class="box">
+				<img src="./images/boxing.jpg">
+				<div class="info">
+					<h3>Boxing</h3>		
+					<p>Boxing (also known as "Western boxing" or "pugilism") is a combat sport in which two people, usually wearing protective gloves and other protective equipment such as hand wraps and mouthguards, throw punches at each other for a predetermined amount of time in a boxing ring.</p>			
+					<button class="btn">More</button>
+				</div>
+			</div>
+			<div class="box">
+				<img src="./images/weight lifting.jpg">
+				<div class="info">
+					<h3>Wieght Lifting</h3>		
+					<p>Weight training is a type of strength training that uses weights for resistance. Weight training provides a stress to the muscles that causes them to adapt and get stronger, similar to the way aerobic conditioning strengthens your heart.</p>			
+					<button class="btn">More</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<script>
+		var mainMenu = document.querySelector('.links')
+		var openMenu = document.querySelector('.open')
+		var closeMenu = document.querySelector('.close')
+
+		openMenu.addEventListener('click', show)
+		closeMenu.addEventListener('click', close)
+
+		function show(){
+			mainMenu.style.display = 'flex'
+			mainMenu.style.right = '0'
+		}
+		function close()
+		{
+			mainMenu.style.right='60%'
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	text-transform: capitalize;
+	transition: all 0.3s linear;
+	outline: none;
+
+}
+*::selection{
+	background-color: yellowgreen;
+	color: #ffff;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+header{
+	width: 100%;
+	height: 100vh;
+	background-image:  url("./images/background.jpg");
+	background-position: center;
+	background-size: cover;
+	clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 90%, 50% 100%, 0 90%, 0 0);
+
+}
+nav{
+	padding: 2% 6%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #ffff;
+}
+nav .logo{
+	font-size: 3rem;
+	cursor: pointer;
+}
+nav .logo span{
+	color: yellowgreen;
+}
+nav .links{
+	padding-left: 0;
+
+}
+nav .links li{
+	display: inline-block;
+	margin-left: 1rem;
+	font-size: 1.5rem;
+}
+nav .links li a{
+	color: #ffff
+}
+.links .active{
+	color: yellowgreen;
+}
+nav .links li a:hover{
+	color: yellowgreen;
+}
+header .content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+header .content h1{
+	font-size: 6rem;
+	text-transform: uppercase;
+	color: blue;
+
+}
+.btn{
+	padding: 0.5rem 1.5rem;
+	background-color: transparent;
+	border: 0.3rem solid yellowgreen;
+	color: yellowgreen;
+	margin-top: 1.8rem;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	font-size: 1rem;
+}
+.btn:hover{
+	background-color: yellowgreen;
+	color: #ffff;
+}
+nav .open,.close{
+	font-size: 1.8rem;
+	cursor: pointer;
+	color: yellowgreen;
+	display: none;
+}
+@media(max-width: 850px){
+	nav .links{
+		height: 25rem;
+		width: 60%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		border-radius: 1.2rem;
+		background-color: #ffff;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+	}
+	nav .links li{
+		font-size: 1.8rem;
+		margin: 0.5rem;
+	}
+	nav .links li a{
+		color: #000;
+	}
+	nav .open,nav .links .close{
+		display: block;
+		position: absolute;
+		top: 1.8rem;
+		right: 1.8rem;
+	}
+	header .content h1{
+		font-size: 6rem;
+	}
+}
+
+.about .row{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2% 6%;
+}
+.about .row .image{
+	flex: 1 1 40rem;
+	padding: 2rem;
+
+}
+.about .row .image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.about .row .content{
+	flex: 1 1 40rem;
+	padding: 2rem;
+	text-align: center;
+
+}
+.about .row .content h1{
+	font-size: 3rem;
+	color: yellowgreen;
+	margin-bottom: 5rem;
+}
+.about .row .content p{
+	line-height: 1.7;
+	font-size: 1.2rem;
+	margin-bottom: 1.2rem;
+}
+.services{
+	min-height: 100vh;
+	text-align: center;
+	padding: 2% 6%;
+}
+.services h1{
+	font-size: 3.8rem;
+	padding: 0.5rem;
+	display: inline-block;
+	color: yellowgreen;
+	border-bottom: 3rem solid yellowgreen;
+	margin-bottom: 1.8rem;
+}
+
+
